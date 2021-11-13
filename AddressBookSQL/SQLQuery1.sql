@@ -19,3 +19,14 @@ values('Sameer','Gibile',' 386,Pune Road','Baramati','Mahrastra',413102,78759445
 ('Akash','Sarode','DP Road','Pune','Maharastra',411203,7777987877,'akash@gmail.com');
 
 select * from  Address_Book_Table;
+
+------ UC 4: Ability to Edit Contact Person Based on their Name ------
+--Edit Email based on Name--
+Update Address_Book_Table
+set Email='7208@gmail.com'
+where FirstName='sagar'
+
+--Edit Address based on Name--
+Update Address_Book_Table
+set Address='1,Dp road,Hadapsir'
+where FirstName='Akash' and SecondName='Sarode';
