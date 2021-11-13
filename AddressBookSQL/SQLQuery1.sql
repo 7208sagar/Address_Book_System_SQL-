@@ -30,3 +30,8 @@ where FirstName='sagar'
 Update Address_Book_Table
 set Address='1,Dp road,Hadapsir'
 where FirstName='Akash' and SecondName='Sarode';
+
+------ UC 5: Ability to Delete Contact Person Based on their Name ------
+delete
+from Address_Book_Table
+where FirstName='Sameer';
