@@ -40,3 +40,10 @@ where FirstName='Sameer';
 ------ UC 6: Ability to Retrieve Person belonging to a City or State ------
 select * from Address_Book_Table
 where City='Pune' or State='Maharastra'
+
+------ UC 7: Ability to Retrieve Count of Person belonging to a City or State ------
+Insert into Address_Book_Table(FirstName,SecondName,Address,City,State,zip,PhoneNumber,Email) 
+values('Suraj','Patil','66,Shivajinagar','Surat','Gujrat',412578,45125825998,'suraj@gmail.com')
+select Count(*),state,City
+from Address_Book_Table
+Group by state,City
