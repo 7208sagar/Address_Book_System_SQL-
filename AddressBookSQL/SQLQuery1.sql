@@ -35,3 +35,8 @@ where FirstName='Akash' and SecondName='Sarode';
 delete
 from Address_Book_Table
 where FirstName='Sameer';
+
+
+------ UC 6: Ability to Retrieve Person belonging to a City or State ------
+select * from Address_Book_Table
+where City='Pune' or State='Maharastra'
